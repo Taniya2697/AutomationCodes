@@ -12,6 +12,8 @@ public class HandlingLocators extends Base{
 		driver.findElement(By.linkText("Simple Form Demo"));
 		driver.findElement(By.partialLinkText("Simple Form"));
 		driver.findElement(By.cssSelector("input[id='single-input-field']"));
+		driver.findElement(By.xpath("//button[text()='Show Message']"));
+		driver.findElement(By.xpath("//button[starts-with(text(),'Show ')]"));
 	}
 
 	public static void main(String[] args) {
